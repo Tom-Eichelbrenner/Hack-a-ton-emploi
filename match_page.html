@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Match page</title>
+    <link rel="stylesheet" href="match_page.css">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+    />
+</head>
+<body style="margin: 0; padding: 0;min-height: 100vh">
+<div id="myDropdown" class="dropdown-content">
+    <div class="dropdown-inside">
+        <div>
+            <h2>Jean</h2>
+            <h2>Clickenmaille</h2>
+            <h2>Artisan Boulanger</h2>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores corporis, deleniti
+                distinctio dolore doloribus eius eos et minima numquam officiis qui quod repellat, repellendus
+                reprehenderit suscipit temporibus voluptate voluptatem.</p>
+        </div>
+    </div>
+</div>
+<div id="myDropdown1" class="dropdown-content">
+    <div class="dropdown-inside">
+        <div>
+            <h2>Jean</h2>
+            <h2>Clickenmaille</h2>
+            <h2>Artisan Boulanger</h2>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores corporis, deleniti
+                distinctio dolore doloribus eius eos et minima numquam officiis qui quod repellat, repellendus
+                reprehenderit suscipit temporibus voluptate voluptatem.</p>
+        </div>
+    </div>
+</div>
+
+<div class="big_container">
+    <div class="hero" style="height: 10vh; display: flex; justify-content: center; align-items: center">
+        <h1 style="text-align: center">MATCHS</h1>
+    </div>
+    <div class="container">
+        <div class="zone_1">
+            <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px; margin-top: 20px">
+                <h1 style="text-align: center">Les employeurs à la recherche d'employés :</h1>
+            </div>
+            <div class="zone_1_results">
+                <div class="card_layer">
+                    <div class="card">
+                        <img src="https://picsum.photos/261/450">
+                        <h1>John Doe</h1>
+                        <p class="title">Développeur web</p>
+                        <p>
+                            <button>En savoir +</button>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="card_layer">
+                    <div class="card">
+                        <img src="https://picsum.photos/261/450">
+                        <h1>John Doe</h1>
+                        <p class="title">Développeur web</p>
+                        <p>
+                            <button class="dropbtn" onclick="myfunction()">En savoir +</button>
+                        </p>
+                    </div>
+                </div>
+                <div class="card_layer">
+                    <div class="card">
+                        <img src="https://picsum.photos/261/450">
+                        <h1>John Doe</h1>
+                        <p class="title">Développeur web</p>
+                        <p>
+                            <button>En savoir +</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="zone_2">
+            <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 40px">
+                <h1 style="text-align: center">Les associations ou club capables de t'aider :</h1>
+            </div>
+            <div class="zone_2_results">
+                <div class="card_layer">
+                    <div class="card">
+                        <img src="https://picsum.photos/261/450">
+                        <h1>John Doe</h1>
+                        <p class="title">Développeur web</p>
+                        <p>
+                            <button class="dropbtn" onclick="myfunction1()">En savoir +</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="zone_3">
+            <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 40px">
+                <h1 style="text-align: center">Les institutions prêtes à t'aider :</h1>
+            </div>
+            <div class="zone_3_results" style="margin-bottom: 30px;">
+                <div class="card_layer">
+                    <div class="card">
+                        <img src="https://picsum.photos/261/450">
+                        <h1>John Doe</h1>
+                        <p class="title">Développeur web</p>
+                        <p>
+                            <button>En savoir +</button>
+                        </p>
+                    </div>
+                </div>
+                <div class="card_layer">
+                    <div class="card">
+                        <img src="https://picsum.photos/261/450">
+                        <h1>John Doe</h1>
+                        <p class="title">Développeur web</p>
+                        <p>
+                            <button>En savoir +</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function myfunction() {
+        document.getElementById("myDropdown").classList.add("show");
+    }
+    function myfunction1(){
+        document.getElementById("myDropdown1").classList.add("show");
+    }
+    let dropdown = document.getElementById("myDropdown")
+    let dropdown1 = document.getElementById("myDropdown1")
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')){
+            dropdown.classList.remove("show")
+            dropdown1.classList.remove("show")
+        }
+    }
+</script>
+</body>
+</html>
